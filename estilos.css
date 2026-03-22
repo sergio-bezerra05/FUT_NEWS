@@ -1,0 +1,109 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #1a1a1a;
+    --primary-color: #0056b3; 
+    --focus-color: #ff8800;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header, main, .sidebar, footer {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+section {
+    flex: 1 1 100%;
+}
+
+.sidebar {
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    main {
+        flex-wrap: nowrap;
+    }
+    .noticias {
+        flex: 2;
+    }
+    .sidebar {
+        margin-top: 0;
+    }
+}
+
+a:focus, button:focus, input:focus, video:focus {
+    outline: 3px solid var(--focus-color);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #004494;
+}
+
+.video-container {
+    max-width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #000;
+}

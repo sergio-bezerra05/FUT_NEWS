@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fut News | Sergio Bezerra Viana</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Fut News</h1>
+    <p>As melhores notícias de futebol estão aqui.</p>
+    <nav>
+        <ul>
+            <li><a href="#">Paraíba</a></li>
+            <li><a href="#">Rio de Janeiro</a></li>
+            <li><a href="#">Pernambuco</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="noticias">
+        <h2>Futebol Brasileiro</h2>
+
+        <article>
+            <h3>Futebol Paraibano</h3>
+            <p>O Botafogo-PB chega ao confronto final como dono da melhor campanha do estadual...</p>
+        </article>
+
+        <article>
+            <h3>Futebol Carioca</h3>
+            <p>O clássico terminou 0 a 0 no tempo normal. Nas penalidades, o Flamengo venceu...</p>
+        </article>
+        
+        <article>
+            <h3>Futebol Pernambucano</h3>
+            <p>O Sport é o grande campeão do Campeonato Pernambucano de 2026. O Leão derrotou o Náutico por 3 a 0...</p>
+        </article>
+    </section>
+
+    <section class="midia">
+        <h2>Gols da Rodada</h2>
+        <div class="video-container">
+            <video controls width="100%">
+                <source src="gols.mp4" type="video/mp4">
+                <source src="gols.webm" type="video/webm">
+                <track src="legendas-ptbr.vtt" kind="subtitles" srclang="pt-br" label="Português">
+                Seu navegador não suporta a tag de vídeo. Baixe o vídeo <a href="gols.mp4">aqui</a>.
+            </video>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <h2>Assine nossa Newsletter</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone (com DDD)</label>
+                <input type="tel" id="telefone" name="telefone" required pattern="\d{11}" title="Digite o DDD e o número (11 dígitos, apenas números)">
+            </div>
+            <button type="submit">Inscrever-se</button>
+        </form>
+    </section>
+</main>
+
+<aside class="sidebar">
+    <h2>Outras Categorias</h2>
+    <ul>
+        <li><a href="#">Futebol Internacional</a></li>
+        <li><a href="#">Mercado da Bola</a></li>
+        <li><a href="#">Opinião</a></li>
+    </ul>
+</aside>
+
+<footer>
+    <p>&copy; 2026 Fut News - Sergio Bezerra Viana</p>
+</footer>
+
+</body>
+</html>
